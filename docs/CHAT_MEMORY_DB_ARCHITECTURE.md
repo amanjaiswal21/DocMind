@@ -16,7 +16,7 @@ graph TD
         ChatMem["JpaChatMemory"]
         DB[("PostgreSQL DB")]
         LLM["OpenAI LLM"]
-
+git remote add origin https://github.com/amanjaiswal21/DocMind.git
         Advisor -->|Read prior messages| ChatMem
         ChatMem -->|Fetch history by conversationId| DB
         Advisor -->|Attach history to prompt| LLM
